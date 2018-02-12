@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 //Routes
 import { APP_ROUTING } from './app.routes';
 
+//Services
+
+import { HeroesService } from './services/heroes.service';
+
 
 
 //Components
@@ -12,6 +16,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/shared/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -21,13 +27,17 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
+    HeroeComponent,
+    SearchComponent,
 
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
