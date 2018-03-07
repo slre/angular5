@@ -1,0 +1,9 @@
+{
+  "serverConfig" : [ {
+  "host" : "http://pokeapi.co",
+  "port" : ":80"
+  }],
+  "bluegroups" :[{
+    "admin" : "gbsalltech"
+  }]
+}
